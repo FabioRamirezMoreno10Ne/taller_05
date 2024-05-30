@@ -1,0 +1,9 @@
+tr>td{
+    background-color: #c0c0c0;
+}
+
+.grid_padre{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/consumirapicalendario.js"></script>
+
+    <title>Calendario</title>
+  </head>
+  <body>
+    <h1>Calendario</h1>
+
+    <div >
+      <div>
+        <input type="text" id="hora" disabled/>
+
+        <h2>Hora:</h2>
+        <input type="time" id="hora" />
+
+        <h2>Fecha</h2>
+        <input type="date" id="fecha" /> <br />
+
+        <h2>descripcion</h2>
+        <textarea name="descripcion" id="descripcion"></textarea><br />
+
+        <h2>nombres participantes</h2>
+        <input type="text" id="participantes" /><br />
+       
+
+        <p></p>
+      </div>
+
+      <div>
+        <button onclick="guardar()">Guardar</button>
+        <button onclick="actualizar()">Actualizar</button>
+        <button onclick="eliminar()">Eliminar</button>
+        <button onclick="listar()">Listar</button>
+      </div>
+    </div>
+
+    <p></p>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Hora</td>
+          <td>Fecha</td>
+          <td>Descripción</td>
+          <td>Participantes</td>
+        </tr>
+      </thead>
+      <tbody id="tabla"></tbody>
+    </table>
+  </body>
+  <script src="js/eventos.js"></script>
+  <script src="js/utilidades.js"></script>
+</html>
